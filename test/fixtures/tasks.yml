@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  taskid: MyString
+  taskname: MyString
+  description: MyText
+
+two:
+  taskid: MyString
+  taskname: MyString
+  description: MyText

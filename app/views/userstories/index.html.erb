@@ -1,0 +1,25 @@
+<h1>Listing userstories</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @userstories.each do |userstory| %>
+  <tr>
+    <td><%= userstory.title %></td>
+    <td><%= userstory.description %></td>
+    <td><%= link_to 'Show', userstory %></td>
+    <td><%= link_to 'Edit', edit_userstory_path(userstory) %></td>
+    <td><%= link_to 'Destroy', userstory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Userstory', new_userstory_path %>
